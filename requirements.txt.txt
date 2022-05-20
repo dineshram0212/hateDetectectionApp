@@ -1,0 +1,3 @@
+streamlit  # APP GUI
+snscrape   # To scrape tweets
+unidecode  # Text cleaning
