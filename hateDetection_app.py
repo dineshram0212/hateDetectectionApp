@@ -20,7 +20,7 @@ for i in range(len(prediction)):
     if prediction['label'][i]==0:
             prediction['label'][i] = "No Hate Detected"
     else:
-        prediction['Label'][i] = "Hate Detected"
+        prediction['label'][i] = "Hate Detected"
 
 # Display prediction
 st.table(data=prediction[['Text', 'label']])
