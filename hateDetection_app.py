@@ -5,7 +5,7 @@ import pickle
 st.title("Hate Speech Detection")
 url = st.text_input('Enter URL')
 limit = st.slider("Select limit", min_value=1, max_value=100)
-if st.button('Enter'):
+if st.button('Detect'):
     # fetch tweet from URL
     username, tweets = getTweets(url, limit-1)
 
@@ -33,16 +33,13 @@ if st.button('Enter'):
 
     st.download_button("Download CSV", csv, "pred.csv")
 
-   
-
-else:
-     st.write('Press enter')
         
  # Text prediction
-ip = st.text_input("Enter Text")
-res = predictText(model, [ip])
-if res==0:
-    st.subheader("No Hate Detected")
-else:
-    st.subheader("Hate Detected") 
+if st.button('Detect'):
+    ip = st.text_input("Enter Text")
+    res = predictText(model, [ip])
+    if res==0:
+        st.subheader("No Hate Detected")
+    else:
+        st.subheader("Hate Detected") 
 
