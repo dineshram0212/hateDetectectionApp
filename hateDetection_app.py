@@ -11,7 +11,7 @@ if st.button('Enter'):
 
     # loading model
     with open('model_final.pkl', 'rb') as f:
-    model = pickle.load(f)
+        model = pickle.load(f)
 
     # Making predictions
     prediction = predictdf(model, tweets)
