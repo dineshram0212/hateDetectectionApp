@@ -35,8 +35,8 @@ if st.button('Detect',key=1):
 
         
  # Text prediction
+ip = st.text_input("Enter Text")
 if st.button('Detect',key=2):
-    ip = st.text_input("Enter Text")
     res = predictText(model, [ip])
     if res==0:
         st.subheader("No Hate Detected")
