@@ -33,14 +33,16 @@ if st.button('Enter'):
 
     st.download_button("Download CSV", csv, "pred.csv")
 
-    # Text prediction
+   
+
+else:
+     st.write('Press enter')
+        
+ # Text prediction
     ip = st.text_input("Enter Text")
     res = predictText(model, [ip])
     if res==0:
         st.subheader("No Hate Detected")
     else:
-        st.subheader("Hate Detected")
-
-else:
-     st.write('Press enter')
+        st.subheader("Hate Detected") 
 
