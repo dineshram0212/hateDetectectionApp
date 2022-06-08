@@ -39,10 +39,10 @@ else:
      st.write('Press enter')
         
  # Text prediction
-    ip = st.text_input("Enter Text")
-    res = predictText(model, [ip])
-    if res==0:
-        st.subheader("No Hate Detected")
-    else:
-        st.subheader("Hate Detected") 
+ip = st.text_input("Enter Text")
+res = predictText(model, [ip])
+if res==0:
+    st.subheader("No Hate Detected")
+else:
+    st.subheader("Hate Detected") 
 
