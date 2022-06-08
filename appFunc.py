@@ -13,7 +13,7 @@ def getTweets(url, limit):
             break
         tweets.append([tweet.date, tweet.id, tweet.content, tweet.user.username]) #declare the attributes to be returned
     
-        tweets_df = pd.DataFrame(tweets, columns=['Datetime', 'Tweet Id', 'Text', 'Username'])
+    tweets_df = pd.DataFrame(tweets, columns=['Datetime', 'Tweet Id', 'Text', 'Username'])
     
     return username, tweets_df
 
