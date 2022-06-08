@@ -7,7 +7,7 @@ def getTweets(url, limit):
     pattern = "^https?:\/\/(?:www\.)?twitter\.com\/(?:#!\/)?@?([^/?#]*)(?:[?#].*)?$"
     username = re.findall(pattern, url)
     tweets = []
-    un = 'from:' + username
+    un = 'from:'
     for i,tweet in enumerate(sntwitter.TwitterSearchScraper(un).get_items()): #declare a username 
         if i>limit:
             break
