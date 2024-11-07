@@ -4,7 +4,7 @@ This Streamlit-based application retrieves tweets from a specified Twitter user 
 
 ## Features
 
-- **Profile Analysis**: Enter a Twitter user’s profile URL, retrieve tweets up to a specified limit, and flag instances of hate speech.
+- **Profile Analysis**: Enter a Twitter user’s profile URL, retrieve tweets up to a specified time period, and flag instances of hate speech.
 - **Individual Text Analysis**: Input custom text for quick hate speech detection.
 - **Downloadable Results**: Download the predictions as a CSV file for further analysis.
 
